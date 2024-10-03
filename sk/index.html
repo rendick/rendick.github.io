@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+  <head>
+    <title>sk</title>
+  </head>
+  <body>
+    <h1>sk - version control system</h1>
+    <p>
+      sk is an extremely user-friendly version control system with the ability
+      to be hosted on the internet.<br />
+      This project is currently in development, so some functions may have
+      problems.
+    </p>
+
+    <hr width="50px" />
+
+    <ul class="content">
+      <li><a href="#1.0">1.0 sk functionality</a></li>
+      <ul>
+        <li><a href="#1.1">1.1 How to use the commands properly?</a></li>
+      </ul>
+      <li><a href="#2.0">2.0 skignore</a></li>
+      <ul>
+        <li><a href="#2.1">2.1 How to use it?</a></li>
+      </ul>
+      <li><a href="#3.0">3.0 sk server</a></li>
+      <ul>
+        <li><a href="#3.1">3.1 How to start it?</a></li>
+        <li><a href="#3.2">3.2 How to deploy it?</a></li>
+      </ul>
+    </ul>
+
+    <hr width="50px" />
+
+    <div id="1.0">
+      <h2>1.0 sk functionality</h2>
+      Here you will be introduced to and learn the basic commands of the sk
+      version control system.
+      <div id="1.1">
+        <h3>1.1 How to use the commands properly?</h3>
+        <p>
+          sk has only 11 commands to make it more user-friendly:
+          <b>
+            init, add, commit, push, rm, clean, info, logs, clone, help,
+            version</b
+          ><br />
+        </p>
+        <p><b>init:</b> initialize the project.</p>
+        <p>
+          <b>add:</b> add the contents of the needed files and directories to
+          the change file
+        </p>
+        <p><b>commit:</b> write changes to the repository.</p>
+        <p><b>push:</b> update the current repository.</p>
+        <p><b>rm:</b> remove files from the working tree.</p>
+        <p><b>clean:</b> clean unnecessary sk files.</p>
+        <p><b>info:</b> output of information about the current sk project.</p>
+        <p><b>clone:</b> clone the repository to a specific directory.</p>
+        <p><b>help:</b> display the help menu.</p>
+        <p><b>version:</b> display the sk version.</p>
+      </div>
+    </div>
+
+    <div id="2.0">
+      <h2>2.0 skignore</h2>
+      <p>
+        <b>skignore</b> is a powerful tool for sk, similar to
+        <code>.gitignore</code> for selecting files & directories that should
+        not to be in the main repository.
+      </p>
+      <div id="2.1">
+        <h3>2.1 How to use it?</h3>
+        <p>
+          First of all, I need to mention, that <code>.skignore</code> has own
+          template.
+        </p>
+        <pre>
+[skignore]
+ignored = ["test.txt", "test_dir/test2.txt"]</pre
+        >
+        <p>
+          If you want <code>.skignore</code> to work, you should create it in
+          the main (first) layer of the repository. (like
+          <code>.gitignore</code>)
+        </p>
+        Put specific files and/or directories into
+        <code>ignored = [ ... ]</code>, and it will filter files/directories!
+      </div>
+    </div>
+
+    <div id="3.0">
+      <h2>3.0 sk server</h2>
+      <p>
+        In my mind, a sk server would be an "alternative" to services like
+        Github, Gitlab, Gitea, etc to make usability more comfortable.
+      </p>
+      <div id="3.1">
+        <h3>3.1 How to start it?</h3>
+        <p>
+          You just need to have already installed
+          <a
+            href="https://docs.npmjs.com/downloading-and-installing-node-js-and-npm"
+            >npm</a
+          >
+          and
+          <a href="https://nodejs.org/en/download/package-manager">Node.js</a>
+          in your system.
+        </p>
+        <p>
+          After making sure you already have installed npm and Node.js and also
+          created sk repository, go to the main/first layer of the repository
+          (directory) and write
+          <code>npm install && npm start</code>
+        </p>
+      </div>
+      <div id="3.2">
+        <h3>3.2 How to deploy it?</h3>
+        <p>It will be written soon.</p>
+      </div>
+    </div>
+
+    <style>
+      body {
+        width: 650px;
+
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      pre {
+        text-align: left;
+        display: inline-block;
+        background: #000000;
+        color: #ffffff;
+        padding: 5px;
+      }
+
+      ul.content {
+        display: inline-block;
+        text-align: left;
+      }
+
+      a {
+        text-decoration: none;
+      }
+    </style>
+  </body>
+</html>
