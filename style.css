@@ -1,0 +1,19 @@
+a {
+    color: #000000;
+}
+
+.container {
+    max-width: fit-content;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.nav a {
+    margin-right: 10px;
+}
+
+.latest,
+.articles,
+.news {
+    text-align: start;
+}
