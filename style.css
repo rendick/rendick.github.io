@@ -25,8 +25,14 @@ a, h2, h3, p, i {
      text-align: start;
 }
 
- .news, .articles{
+ .news, .articles {
      max-width: 900px;
      line-height: 25px;
 }
  
+img {
+     max-width: 100%;
+     height: auto;
+     display: block;
+     margin: 10px auto;
+}
